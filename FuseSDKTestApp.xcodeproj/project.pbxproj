@@ -43,6 +43,9 @@
 		6F272BE91B7679850082401D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BE81B7679850082401D /* SystemConfiguration.framework */; };
 		6F272BEB1B76798C0082401D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BEA1B76798C0082401D /* Twitter.framework */; };
 		6F272BED1B76799A0082401D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BEC1B76799A0082401D /* UIKit.framework */; };
+		6FAF88461B77C09E00D1EDB1 /* CustomEventUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF88451B77C09E00D1EDB1 /* CustomEventUITableViewCell.m */; };
+		6FAF88491B77C19D00D1EDB1 /* CustomEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF88481B77C19D00D1EDB1 /* CustomEventViewController.m */; };
+		6FAF884D1B77F5BC00D1EDB1 /* CustomEventUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF884C1B77F5BC00D1EDB1 /* CustomEventUITableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,12 @@
 		6F272BE81B7679850082401D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6F272BEA1B76798C0082401D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		6F272BEC1B76799A0082401D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6FAF88441B77C09E00D1EDB1 /* CustomEventUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEventUITableViewCell.h; sourceTree = "<group>"; };
+		6FAF88451B77C09E00D1EDB1 /* CustomEventUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEventUITableViewCell.m; sourceTree = "<group>"; };
+		6FAF88471B77C19D00D1EDB1 /* CustomEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEventViewController.h; sourceTree = "<group>"; };
+		6FAF88481B77C19D00D1EDB1 /* CustomEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEventViewController.m; sourceTree = "<group>"; };
+		6FAF884B1B77F5BC00D1EDB1 /* CustomEventUITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEventUITableView.h; sourceTree = "<group>"; };
+		6FAF884C1B77F5BC00D1EDB1 /* CustomEventUITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEventUITableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,31 +161,7 @@
 		6F272B7F1B7677650082401D = {
 			isa = PBXGroup;
 			children = (
-				6F272BEC1B76799A0082401D /* UIKit.framework */,
-				6F272BEA1B76798C0082401D /* Twitter.framework */,
-				6F272BE81B7679850082401D /* SystemConfiguration.framework */,
-				6F272BE61B7679790082401D /* StoreKit.framework */,
-				6F272BE41B76796E0082401D /* Social.framework */,
-				6F272BE21B7679660082401D /* QuartzCore.framework */,
-				6F272BE01B76795D0082401D /* MobileCoreServices.framework */,
-				6F272BDE1B7679540082401D /* MessageUI.framework */,
-				6F272BDC1B76794A0082401D /* MediaPlayer.framework */,
-				6F272BDA1B7679410082401D /* libz.dylib */,
-				6F272BD81B7679390082401D /* libxml2.dylib */,
-				6F272BD61B7679300082401D /* libsqlite3.dylib */,
-				6F272BD41B7679240082401D /* iAd.framework */,
-				6F272BD21B76791D0082401D /* GameKit.framework */,
-				6F272BD01B7679160082401D /* Foundation.framework */,
-				6F272BCC1B76790A0082401D /* EventKit.framework */,
-				6F272BCD1B76790A0082401D /* EventKitUI.framework */,
-				6F272BCA1B7679000082401D /* CoreTelephony.framework */,
-				6F272BC81B7678F80082401D /* CoreMedia.framework */,
-				6F272BC61B7678EF0082401D /* CoreLocation.framework */,
-				6F272BC41B7678E80082401D /* CoreGraphics.framework */,
-				6F272BC21B7678E20082401D /* AVFoundation.framework */,
-				6F272BC01B7678DD0082401D /* AudioToolbox.framework */,
-				6F272BBE1B7678D50082401D /* AdSupport.framework */,
-				6F272BBC1B7678CE0082401D /* Accelerate.framework */,
+				6FAF884A1B77C1C300D1EDB1 /* Frameworks */,
 				6F272B8A1B7677650082401D /* FuseSDKTestApp */,
 				6F272BA41B7677650082401D /* FuseSDKTestAppTests */,
 				6F272B891B7677650082401D /* Products */,
@@ -199,6 +184,12 @@
 				6F272B901B7677650082401D /* AppDelegate.m */,
 				6F272B921B7677650082401D /* ViewController.h */,
 				6F272B931B7677650082401D /* ViewController.m */,
+				6FAF884B1B77F5BC00D1EDB1 /* CustomEventUITableView.h */,
+				6FAF884C1B77F5BC00D1EDB1 /* CustomEventUITableView.m */,
+				6FAF88471B77C19D00D1EDB1 /* CustomEventViewController.h */,
+				6FAF88481B77C19D00D1EDB1 /* CustomEventViewController.m */,
+				6FAF88441B77C09E00D1EDB1 /* CustomEventUITableViewCell.h */,
+				6FAF88451B77C09E00D1EDB1 /* CustomEventUITableViewCell.m */,
 				6F272B951B7677650082401D /* Main.storyboard */,
 				6F272B981B7677650082401D /* Images.xcassets */,
 				6F272B9A1B7677650082401D /* LaunchScreen.xib */,
@@ -245,6 +236,38 @@
 				6F272BB71B76780E0082401D /* libFuseSDK.a */,
 			);
 			path = Fuse;
+			sourceTree = "<group>";
+		};
+		6FAF884A1B77C1C300D1EDB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F272BEC1B76799A0082401D /* UIKit.framework */,
+				6F272BEA1B76798C0082401D /* Twitter.framework */,
+				6F272BE81B7679850082401D /* SystemConfiguration.framework */,
+				6F272BE61B7679790082401D /* StoreKit.framework */,
+				6F272BE41B76796E0082401D /* Social.framework */,
+				6F272BE21B7679660082401D /* QuartzCore.framework */,
+				6F272BE01B76795D0082401D /* MobileCoreServices.framework */,
+				6F272BDE1B7679540082401D /* MessageUI.framework */,
+				6F272BDC1B76794A0082401D /* MediaPlayer.framework */,
+				6F272BDA1B7679410082401D /* libz.dylib */,
+				6F272BD81B7679390082401D /* libxml2.dylib */,
+				6F272BD61B7679300082401D /* libsqlite3.dylib */,
+				6F272BD41B7679240082401D /* iAd.framework */,
+				6F272BD21B76791D0082401D /* GameKit.framework */,
+				6F272BD01B7679160082401D /* Foundation.framework */,
+				6F272BCC1B76790A0082401D /* EventKit.framework */,
+				6F272BCD1B76790A0082401D /* EventKitUI.framework */,
+				6F272BCA1B7679000082401D /* CoreTelephony.framework */,
+				6F272BC81B7678F80082401D /* CoreMedia.framework */,
+				6F272BC61B7678EF0082401D /* CoreLocation.framework */,
+				6F272BC41B7678E80082401D /* CoreGraphics.framework */,
+				6F272BC21B7678E20082401D /* AVFoundation.framework */,
+				6F272BC01B7678DD0082401D /* AudioToolbox.framework */,
+				6F272BBE1B7678D50082401D /* AdSupport.framework */,
+				6F272BBC1B7678CE0082401D /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FAF88491B77C19D00D1EDB1 /* CustomEventViewController.m in Sources */,
+				6FAF884D1B77F5BC00D1EDB1 /* CustomEventUITableView.m in Sources */,
 				6F272B941B7677650082401D /* ViewController.m in Sources */,
+				6FAF88461B77C09E00D1EDB1 /* CustomEventUITableViewCell.m in Sources */,
 				6F272B911B7677650082401D /* AppDelegate.m in Sources */,
 				6F272B8E1B7677650082401D /* main.m in Sources */,
 			);

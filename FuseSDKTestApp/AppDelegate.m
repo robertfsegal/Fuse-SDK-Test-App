@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (copy, nonatomic) NSString *zone;
 @end
 
 @implementation AppDelegate
@@ -19,7 +19,14 @@
     // Override point for customization after application launch.
     [FuseSDK startSession:@"" delegate:self withOptions:nil];
     
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onZoneSelected:) name:@"FuseZoneSelected" object:nil];
+    
     return YES;
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -46,18 +53,27 @@
 
 -(void)sessionLoginError:(NSError *)_error
 {
-    NSLog(@"Session login error %@", _error);
+   // NSLog(@"Session login error %@", _error);
+    
+    NSDictionary *d = @{@"message" : _error};
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"FuseMessageLog" object:nil userInfo:d];
 }
 
 -(void)sessionStartReceived
 {
-    NSLog(@"Session start received");
- 
-    [FuseSDK registerLevel:10];
+    NSDictionary *d = @{@"message" : NSStringFromSelector(_cmd)};
     
-    for (int i = 0 ; i < 10; i++)
+     [[NSNotificationCenter defaultCenter] postNotificationName:@"FuseMessageLog" object:nil userInfo:d];
+ 
+    for (int i = 1 ; i <= 10; i++)
     {
         [FuseSDK registerCustomEvent:i withInt:0];
+    }
+    
+    for (int i = 11 ; i <= 20; i++)
+    {
+        [FuseSDK registerCustomEvent:i withString:@""];
     }
 }
 
@@ -67,7 +83,12 @@
     
     int error = (int) [_error code];
  
-    NSLog(@"isAvailable -> %@, error -> %@", _available, _error);
+    //NSLog(@"isAvailable -> %@, error -> %@", _available, _error);
+    
+    NSDictionary *d = @{@"message" : [NSString stringWithFormat:@"isAvailable -> %@, error -> %@", _available, _error]};
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"FuseMessageLog" object:nil userInfo:d];
+    
     
     if (error != FUSE_ERROR_NO_ERROR)
     {
@@ -77,19 +98,33 @@
     {
         if (isAvailable)
         {
-            [FuseSDK showAdForZoneID:@"" options:@{kFuseRewardedAdOptionKey_ShowPreRoll:@NO}];
+            
+            
+            [FuseSDK showAdForZoneID:self.zone options:@{kFuseRewardedAdOptionKey_ShowPreRoll:@NO}];
         }
     }
 }
 
 -(void)adWillClose
 {
-    NSLog(@"%@", @"adWillClose");
+     [[NSNotificationCenter defaultCenter] postNotificationName:@"FuseMessageLog" object:nil userInfo:@{@"message" : NSStringFromSelector(_cmd)}];
+}
+
+-(void)adFailedToDisplay
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"FuseMessageLog"
+                                                        object:nil
+                                                      userInfo:@{@"message" : NSStringFromSelector(_cmd)}];
 }
 
 -(void)onPlayButton
 {
     [FuseSDK preloadAdForZoneID:@""];
+}
+
+-(void)onZoneSelected:(NSNotification *)n
+{
+    self.zone = n.userInfo[@"zone"];
 }
 
 @end

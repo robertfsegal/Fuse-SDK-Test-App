@@ -53,8 +53,6 @@
 
 -(void)sessionLoginError:(NSError *)_error
 {
-   // NSLog(@"Session login error %@", _error);
-    
     NSDictionary *d = @{@"message" : _error};
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"FuseMessageLog" object:nil userInfo:d];
@@ -115,11 +113,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"FuseMessageLog"
                                                         object:nil
                                                       userInfo:@{@"message" : NSStringFromSelector(_cmd)}];
-}
-
--(void)onPlayButton
-{
-    [FuseSDK preloadAdForZoneID:@""];
 }
 
 -(void)onZoneSelected:(NSNotification *)n

@@ -14,10 +14,6 @@
 		6F272B991B7677650082401D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F272B981B7677650082401D /* Images.xcassets */; };
 		6F272B9C1B7677650082401D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F272B9A1B7677650082401D /* LaunchScreen.xib */; };
 		6F272BA81B7677650082401D /* FuseSDKTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F272BA71B7677650082401D /* FuseSDKTestAppTests.m */; };
-		6F272BB81B76780E0082401D /* libFuseAdapterAdcolony.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BB41B76780E0082401D /* libFuseAdapterAdcolony.a */; };
-		6F272BB91B76780E0082401D /* libFuseAdapterAppLovin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BB51B76780E0082401D /* libFuseAdapterAppLovin.a */; };
-		6F272BBA1B76780E0082401D /* libFuseAdapterHyprMX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BB61B76780E0082401D /* libFuseAdapterHyprMX.a */; };
-		6F272BBB1B76780E0082401D /* libFuseSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BB71B76780E0082401D /* libFuseSDK.a */; };
 		6F272BBD1B7678CE0082401D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BBC1B7678CE0082401D /* Accelerate.framework */; };
 		6F272BBF1B7678D50082401D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BBE1B7678D50082401D /* AdSupport.framework */; };
 		6F272BC11B7678DD0082401D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BC01B7678DD0082401D /* AudioToolbox.framework */; };
@@ -43,6 +39,12 @@
 		6F272BE91B7679850082401D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BE81B7679850082401D /* SystemConfiguration.framework */; };
 		6F272BEB1B76798C0082401D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BEA1B76798C0082401D /* Twitter.framework */; };
 		6F272BED1B76799A0082401D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F272BEC1B76799A0082401D /* UIKit.framework */; };
+		6FA99F861B783C8400FB5A70 /* libFuseSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA99F7E1B783C8400FB5A70 /* libFuseSDK.a */; };
+		6FA99F871B783C8400FB5A70 /* libFuseAdapterAdcolony.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA99F811B783C8400FB5A70 /* libFuseAdapterAdcolony.a */; };
+		6FA99F881B783C8400FB5A70 /* libFuseAdapterAppLovin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA99F821B783C8400FB5A70 /* libFuseAdapterAppLovin.a */; };
+		6FA99F891B783C8400FB5A70 /* libFuseAdapterHyprMX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA99F831B783C8400FB5A70 /* libFuseAdapterHyprMX.a */; };
+		6FA99F8A1B783C8400FB5A70 /* libFuseAdapterLeadBolt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA99F841B783C8400FB5A70 /* libFuseAdapterLeadBolt.a */; };
+		6FA99F8B1B783C8400FB5A70 /* libFuseAdapterNativeX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA99F851B783C8400FB5A70 /* libFuseAdapterNativeX.a */; };
 		6FAF88461B77C09E00D1EDB1 /* CustomEventUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF88451B77C09E00D1EDB1 /* CustomEventUITableViewCell.m */; };
 		6FAF88491B77C19D00D1EDB1 /* CustomEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF88481B77C19D00D1EDB1 /* CustomEventViewController.m */; };
 		6FAF884D1B77F5BC00D1EDB1 /* CustomEventUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAF884C1B77F5BC00D1EDB1 /* CustomEventUITableView.m */; };
@@ -72,12 +74,6 @@
 		6F272BA11B7677650082401D /* FuseSDKTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuseSDKTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F272BA61B7677650082401D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F272BA71B7677650082401D /* FuseSDKTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuseSDKTestAppTests.m; sourceTree = "<group>"; };
-		6F272BB21B76780E0082401D /* FuseSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuseSDK.h; sourceTree = "<group>"; };
-		6F272BB31B76780E0082401D /* FuseSDKDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuseSDKDefinitions.h; sourceTree = "<group>"; };
-		6F272BB41B76780E0082401D /* libFuseAdapterAdcolony.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterAdcolony.a; sourceTree = "<group>"; };
-		6F272BB51B76780E0082401D /* libFuseAdapterAppLovin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterAppLovin.a; sourceTree = "<group>"; };
-		6F272BB61B76780E0082401D /* libFuseAdapterHyprMX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterHyprMX.a; sourceTree = "<group>"; };
-		6F272BB71B76780E0082401D /* libFuseSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseSDK.a; sourceTree = "<group>"; };
 		6F272BBC1B7678CE0082401D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		6F272BBE1B7678D50082401D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6F272BC01B7678DD0082401D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -103,6 +99,14 @@
 		6F272BE81B7679850082401D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6F272BEA1B76798C0082401D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		6F272BEC1B76799A0082401D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6FA99F7E1B783C8400FB5A70 /* libFuseSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseSDK.a; sourceTree = "<group>"; };
+		6FA99F7F1B783C8400FB5A70 /* FuseSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuseSDK.h; sourceTree = "<group>"; };
+		6FA99F801B783C8400FB5A70 /* FuseSDKDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuseSDKDefinitions.h; sourceTree = "<group>"; };
+		6FA99F811B783C8400FB5A70 /* libFuseAdapterAdcolony.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterAdcolony.a; sourceTree = "<group>"; };
+		6FA99F821B783C8400FB5A70 /* libFuseAdapterAppLovin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterAppLovin.a; sourceTree = "<group>"; };
+		6FA99F831B783C8400FB5A70 /* libFuseAdapterHyprMX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterHyprMX.a; sourceTree = "<group>"; };
+		6FA99F841B783C8400FB5A70 /* libFuseAdapterLeadBolt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterLeadBolt.a; sourceTree = "<group>"; };
+		6FA99F851B783C8400FB5A70 /* libFuseAdapterNativeX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFuseAdapterNativeX.a; sourceTree = "<group>"; };
 		6FAF88441B77C09E00D1EDB1 /* CustomEventUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEventUITableViewCell.h; sourceTree = "<group>"; };
 		6FAF88451B77C09E00D1EDB1 /* CustomEventUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEventUITableViewCell.m; sourceTree = "<group>"; };
 		6FAF88471B77C19D00D1EDB1 /* CustomEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEventViewController.h; sourceTree = "<group>"; };
@@ -117,7 +121,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F272BED1B76799A0082401D /* UIKit.framework in Frameworks */,
+				6FA99F871B783C8400FB5A70 /* libFuseAdapterAdcolony.a in Frameworks */,
 				6F272BEB1B76798C0082401D /* Twitter.framework in Frameworks */,
+				6FA99F8A1B783C8400FB5A70 /* libFuseAdapterLeadBolt.a in Frameworks */,
+				6FA99F881B783C8400FB5A70 /* libFuseAdapterAppLovin.a in Frameworks */,
 				6F272BE91B7679850082401D /* SystemConfiguration.framework in Frameworks */,
 				6F272BE71B7679790082401D /* StoreKit.framework in Frameworks */,
 				6F272BE51B76796E0082401D /* Social.framework in Frameworks */,
@@ -125,9 +132,11 @@
 				6F272BE11B76795D0082401D /* MobileCoreServices.framework in Frameworks */,
 				6F272BDF1B7679540082401D /* MessageUI.framework in Frameworks */,
 				6F272BDD1B76794A0082401D /* MediaPlayer.framework in Frameworks */,
+				6FA99F891B783C8400FB5A70 /* libFuseAdapterHyprMX.a in Frameworks */,
 				6F272BDB1B7679410082401D /* libz.dylib in Frameworks */,
 				6F272BD91B7679390082401D /* libxml2.dylib in Frameworks */,
 				6F272BD71B7679300082401D /* libsqlite3.dylib in Frameworks */,
+				6FA99F8B1B783C8400FB5A70 /* libFuseAdapterNativeX.a in Frameworks */,
 				6F272BD51B7679240082401D /* iAd.framework in Frameworks */,
 				6F272BD31B76791D0082401D /* GameKit.framework in Frameworks */,
 				6F272BD11B7679160082401D /* Foundation.framework in Frameworks */,
@@ -141,10 +150,7 @@
 				6F272BC11B7678DD0082401D /* AudioToolbox.framework in Frameworks */,
 				6F272BBF1B7678D50082401D /* AdSupport.framework in Frameworks */,
 				6F272BBD1B7678CE0082401D /* Accelerate.framework in Frameworks */,
-				6F272BB81B76780E0082401D /* libFuseAdapterAdcolony.a in Frameworks */,
-				6F272BB91B76780E0082401D /* libFuseAdapterAppLovin.a in Frameworks */,
-				6F272BBA1B76780E0082401D /* libFuseAdapterHyprMX.a in Frameworks */,
-				6F272BBB1B76780E0082401D /* libFuseSDK.a in Frameworks */,
+				6FA99F861B783C8400FB5A70 /* libFuseSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,12 +234,14 @@
 		6F272BB11B76780E0082401D /* Fuse */ = {
 			isa = PBXGroup;
 			children = (
-				6F272BB21B76780E0082401D /* FuseSDK.h */,
-				6F272BB31B76780E0082401D /* FuseSDKDefinitions.h */,
-				6F272BB41B76780E0082401D /* libFuseAdapterAdcolony.a */,
-				6F272BB51B76780E0082401D /* libFuseAdapterAppLovin.a */,
-				6F272BB61B76780E0082401D /* libFuseAdapterHyprMX.a */,
-				6F272BB71B76780E0082401D /* libFuseSDK.a */,
+				6FA99F7E1B783C8400FB5A70 /* libFuseSDK.a */,
+				6FA99F7F1B783C8400FB5A70 /* FuseSDK.h */,
+				6FA99F801B783C8400FB5A70 /* FuseSDKDefinitions.h */,
+				6FA99F811B783C8400FB5A70 /* libFuseAdapterAdcolony.a */,
+				6FA99F821B783C8400FB5A70 /* libFuseAdapterAppLovin.a */,
+				6FA99F831B783C8400FB5A70 /* libFuseAdapterHyprMX.a */,
+				6FA99F841B783C8400FB5A70 /* libFuseAdapterLeadBolt.a */,
+				6FA99F851B783C8400FB5A70 /* libFuseAdapterNativeX.a */,
 			);
 			path = Fuse;
 			sourceTree = "<group>";

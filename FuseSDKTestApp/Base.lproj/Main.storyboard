@@ -145,7 +145,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onClearAllEventsButton:" destination="mVF-gt-dFp" eventType="touchUpInside" id="VQh-ch-0hB"/>
-                                    <action selector="onClearEventsButton:" destination="mVF-gt-dFp" eventType="touchUpInside" id="YGx-Ap-8Ha"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Qyo-8t-3Sk" customClass="CustomEventUITableView">

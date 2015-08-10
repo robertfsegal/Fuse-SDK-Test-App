@@ -903,6 +903,18 @@
 
 
 #pragma mark Interstitial Ads
+/*
+ 
+ * @brief This method sets the user ID string for rewarded video server verification
+ * @details To allow server side verificiation. A user id registered with this function is passed to the server when a rewarded video has been completed. The server then transmits faithfully this id 
+    to the 3rd Party server registered on the FusePowered Dashboard. The value is only cached for the duration of the session, and can be changed at any time.
+ 
+ @code
+ [FuseSDK setRewardedVideoUserID:@"bobSmith1994"];
+ 
+ */
+
++(void) setRewardedVideoUserID:(NSString *) _userID;
 
 
 /*!
